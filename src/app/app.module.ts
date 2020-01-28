@@ -8,7 +8,8 @@ import { FashionPageComponent } from './fashion-page/fashion-page.component';
 import { MoviePageComponent } from './movie-page/movie-page.component';
 import { ToysPageComponent } from './toys-page/toys-page.component';
 import { SweetsPageComponent } from './sweets-page/sweets-page.component';
-import { MainLayoutComponent } from './shared/component/main-layout/main-layout.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {SharedModule} from "./shared/component/shared.module";
 
 @NgModule({
   declarations: [
@@ -18,11 +19,12 @@ import { MainLayoutComponent } from './shared/component/main-layout/main-layout.
     MoviePageComponent,
     ToysPageComponent,
     SweetsPageComponent,
-    MainLayoutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
