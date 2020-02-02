@@ -5,7 +5,7 @@ import {FashionPageComponent} from "./fashion-page/fashion-page.component";
 import {MoviePageComponent} from "./movie-page/movie-page.component";
 import {SweetsPageComponent} from "./sweets-page/sweets-page.component";
 import {ToysPageComponent} from "./toys-page/toys-page.component";
-import {MainLayoutComponent} from "./shared/component/main-layout/main-layout.component";
+import {CreatePageComponent} from "./create-page/create-page.component";
 
 
 const routes: Routes = [
@@ -13,7 +13,8 @@ const routes: Routes = [
       {path:'fashion', component: FashionPageComponent},
       {path:'movie', component: MoviePageComponent},
       {path:'sweets', component: SweetsPageComponent},
-      {path:'toys', component:ToysPageComponent}
+      {path:'toys', component:ToysPageComponent},
+      {path:'create', component: CreatePageComponent}
 ];
 
 @NgModule({

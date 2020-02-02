@@ -8,8 +8,9 @@ import { FashionPageComponent } from './fashion-page/fashion-page.component';
 import { MoviePageComponent } from './movie-page/movie-page.component';
 import { ToysPageComponent } from './toys-page/toys-page.component';
 import { SweetsPageComponent } from './sweets-page/sweets-page.component';
-import {ReactiveFormsModule} from "@angular/forms";
-import {SharedModule} from "./shared/component/shared.module";
+import {ReactiveFormsModule} from '@angular/forms';
+import { CreatePageComponent } from './create-page/create-page.component';
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {SharedModule} from "./shared/component/shared.module";
     MoviePageComponent,
     ToysPageComponent,
     SweetsPageComponent,
+    CreatePageComponent,
   ],
   imports: [
     BrowserModule,
