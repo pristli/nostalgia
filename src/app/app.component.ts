@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
  img = 'assets/img/banner.jpg'
+
+
 }
