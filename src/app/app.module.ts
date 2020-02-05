@@ -8,6 +8,7 @@ import { FashionPageComponent } from './fashion-page/fashion-page.component';
 import { MoviePageComponent } from './movie-page/movie-page.component';
 import { ToysPageComponent } from './toys-page/toys-page.component';
 import { SweetsPageComponent } from './sweets-page/sweets-page.component';
+import {CreatePageComponent} from "./create-page/create-page.component";
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { SweetsPageComponent } from './sweets-page/sweets-page.component';
     MoviePageComponent,
     ToysPageComponent,
     SweetsPageComponent,
+    CreatePageComponent
   ],
   imports: [
     BrowserModule,
