@@ -9,6 +9,9 @@ import { MoviePageComponent } from './movie-page/movie-page.component';
 import { ToysPageComponent } from './toys-page/toys-page.component';
 import { SweetsPageComponent } from './sweets-page/sweets-page.component';
 import {CreatePageComponent} from "./create-page/create-page.component";
+import {SharedModule} from "./shared/shared.module";
+import {ReactiveFormsModule} from "@angular/forms";
+import {AlertService} from "./shared/alert.service";
 
 
 @NgModule({
@@ -23,9 +26,11 @@ import {CreatePageComponent} from "./create-page/create-page.component";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AlertService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

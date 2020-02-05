@@ -6,7 +6,7 @@ import {Environment} from './interface';
 
 export const environment: Environment = {
   production: false,
-  fbDbUrl: 'https://angular-blog-e513b.firebaseio.com'
+  fbDbUrl: 'https://nostalgia-2d9b5.firebaseio.com'
 };
 
 /*

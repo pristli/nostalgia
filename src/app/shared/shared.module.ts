@@ -2,15 +2,18 @@ import {NgModule} from "@angular/core";
 import {HttpClientModule} from "@angular/common/http";
 import {QuillModule} from "ngx-quill";
 import { AlertComponent } from './component/alert/alert.component';
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   imports: [
     HttpClientModule,
-    QuillModule.forRoot()
+    QuillModule.forRoot(),
+    CommonModule
   ],
   exports: [
     HttpClientModule,
-    QuillModule
+    QuillModule,
+    AlertComponent
   ],
   declarations: [AlertComponent]
 })
