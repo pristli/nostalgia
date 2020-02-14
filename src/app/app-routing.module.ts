@@ -15,6 +15,7 @@ const routes: Routes = [
       {path:'sweets', component: SweetsPageComponent},
       {path:'toys', component:ToysPageComponent},
       {path:'create', component: CreatePageComponent}
+
 ];
 
 @NgModule({
