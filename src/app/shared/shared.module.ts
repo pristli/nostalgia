@@ -14,7 +14,8 @@ import { PostComponent } from './component/post/post.component';
   exports: [
     HttpClientModule,
     QuillModule,
-    AlertComponent
+    AlertComponent,
+    PostComponent
   ],
   declarations: [AlertComponent, PostComponent]
 })
