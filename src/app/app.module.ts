@@ -9,28 +9,32 @@ import { MoviePageComponent } from './movie-page/movie-page.component';
 import { ToysPageComponent } from './toys-page/toys-page.component';
 import { SweetsPageComponent } from './sweets-page/sweets-page.component';
 import {CreatePageComponent} from "./create-page/create-page.component";
-import {SharedModule} from "./shared/shared.module";
+
 import {ReactiveFormsModule} from "@angular/forms";
 import {AlertService} from "./shared/alert.service";
+import {SharedModule} from "./shared/shared.module";
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomePageComponent,
-    FashionPageComponent,
-    MoviePageComponent,
-    ToysPageComponent,
-    SweetsPageComponent,
-    CreatePageComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SharedModule,
-    ReactiveFormsModule
-  ],
-  providers: [AlertService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HomePageComponent,
+        FashionPageComponent,
+        MoviePageComponent,
+        ToysPageComponent,
+        SweetsPageComponent,
+        CreatePageComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+        SharedModule
+    ],
+    providers: [AlertService],
+    exports: [
+        CreatePageComponent
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

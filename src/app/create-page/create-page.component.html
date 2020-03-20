@@ -1,11 +1,11 @@
 <form [formGroup]="form" (ngSubmit)="submit()">
-  <h1>Создание нового поста</h1>
+  <h1>Створити спогад</h1>
 
   <div
     class="form-control"
     [ngClass]="{invalid: form.get('title').touched && form.get('title').invalid}"
   >
-    <label for="title">Назва поста:</label>
+    <label for="title">Назва спогаду:</label>
     <input id="title" type="text" formControlName="title">
     <div
       *ngIf="form.get('title').touched && form.get('title').invalid"
@@ -20,9 +20,10 @@
 
 
   <div class="form-control">
-    <label>Текст:</label>
+    <label></label>
     <quill-editor formControlName="text"></quill-editor>
   </div>
+
 
   <div
     class="form-control"
@@ -35,7 +36,7 @@
       class="validation"
     >
       <small *ngIf="form.get('author').errors.required">
-        Введить автора поста
+
       </small>
     </div>
   </div>
@@ -44,6 +45,8 @@
     type="submit"
     class="btn btn-block btn-dark"
     [disabled]="form.invalid"
-  >Создать пост</button>
+  >Створити спогад</button>
 </form>
 <app-alert></app-alert>
+
+
