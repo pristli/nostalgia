@@ -10,7 +10,8 @@ import { PostComponent } from './component/post/post.component';
     imports: [
         HttpClientModule,
         QuillModule.forRoot(),
-        CommonModule
+        CommonModule,
+
 
     ],
   exports: [

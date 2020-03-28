@@ -4,32 +4,34 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { FashionPageComponent } from './fashion-page/fashion-page.component';
-import { MoviePageComponent } from './movie-page/movie-page.component';
-import { ToysPageComponent } from './toys-page/toys-page.component';
-import { SweetsPageComponent } from './sweets-page/sweets-page.component';
 import {CreatePageComponent} from "./create-page/create-page.component";
 
-import {ReactiveFormsModule} from "@angular/forms";
-import {AlertService} from "./shared/alert.service";
-import {SharedModule} from "./shared/shared.module";
+import {ReactiveFormsModule} from '@angular/forms';
+import {AlertService} from './shared/alert.service';
+import {SharedModule} from './shared/shared.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatRadioModule} from '@angular/material/radio';
+import { AboutPageComponent } from './about-page/about-page.component';
+
+
 
 
 @NgModule({
     declarations: [
         AppComponent,
         HomePageComponent,
-        FashionPageComponent,
-        MoviePageComponent,
-        ToysPageComponent,
-        SweetsPageComponent,
-        CreatePageComponent
+        CreatePageComponent,
+        AboutPageComponent,
+
+
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         ReactiveFormsModule,
-        SharedModule
+        SharedModule,
+        BrowserAnimationsModule,
+        MatRadioModule
     ],
     providers: [AlertService],
     exports: [

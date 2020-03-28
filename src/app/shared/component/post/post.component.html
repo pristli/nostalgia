@@ -2,11 +2,17 @@
   <div class="card-header">
     <h2>{{post.title}}</h2>
 
+    <div>
+      <quill-view-html [content]="post.text"></quill-view-html>
+    </div>
+
     <small>{{post.date | date:'dd.MM.yyyy'}}</small>
   </div>
 
   <div>
     <small>{{post.author}}</small>
   </div>
+
+
 
 </div>

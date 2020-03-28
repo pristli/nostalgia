@@ -21,6 +21,7 @@ export class CreatePageComponent implements OnInit {
       text: new FormControl(null, Validators.required),
       author: new FormControl(null, Validators.required)
 
+
     })
   }
 
