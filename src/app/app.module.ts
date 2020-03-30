@@ -6,12 +6,13 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import {CreatePageComponent} from "./create-page/create-page.component";
 
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AlertService} from './shared/alert.service';
 import {SharedModule} from './shared/shared.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatRadioModule} from '@angular/material/radio';
 import { AboutPageComponent } from './about-page/about-page.component';
+import {SearchPipe} from "./search.pipe";
+import { PostPageComponent } from './post-page/post-page.component';
 
 
 
@@ -22,21 +23,22 @@ import { AboutPageComponent } from './about-page/about-page.component';
         HomePageComponent,
         CreatePageComponent,
         AboutPageComponent,
-
-
+        SearchPipe,
+        PostPageComponent
     ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        ReactiveFormsModule,
-        SharedModule,
-        BrowserAnimationsModule,
-        MatRadioModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    SharedModule,
+    BrowserAnimationsModule,
+    FormsModule,
+  ],
     providers: [AlertService],
-    exports: [
-        CreatePageComponent
-    ],
+  exports: [
+    CreatePageComponent,
+    SearchPipe
+  ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
