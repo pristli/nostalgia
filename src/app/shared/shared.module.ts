@@ -5,6 +5,7 @@ import { AlertComponent } from './component/alert/alert.component';
 import {CommonModule} from "@angular/common";
 import { PostComponent } from './component/post/post.component';
 import {RouterModule} from "@angular/router";
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -13,7 +14,8 @@ import {RouterModule} from "@angular/router";
         HttpClientModule,
         QuillModule.forRoot(),
         CommonModule,
-        RouterModule
+        RouterModule,
+        FormsModule
 
 
     ],
