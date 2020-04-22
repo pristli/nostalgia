@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -13,6 +14,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AboutPageComponent } from './about-page/about-page.component';
 import {SearchPipe} from "./search.pipe";
 import { PostPageComponent } from './post-page/post-page.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 
@@ -33,6 +36,8 @@ import { PostPageComponent } from './post-page/post-page.component';
     SharedModule,
     BrowserAnimationsModule,
     FormsModule,
+    NgbModule
+
   ],
     providers: [AlertService],
   exports: [

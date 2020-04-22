@@ -37,6 +37,7 @@ ul {
 a {
   text-decoration: none;
   color: #333;
+
 }
 
 .navbar {
@@ -49,6 +50,7 @@ a {
   margin-bottom: 1rem;
   background-color: black;
   color: #fff;
+
 
   ul {
     display: flex;
@@ -90,15 +92,12 @@ a {
   color: #333;
 }
 
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
 .container {
   max-width: 1100px;
   margin: auto;
   overflow: hidden;
   padding: 0 2rem;
+
 }
 
 .text-center {
@@ -107,9 +106,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .card {
   padding: 1rem;
-  border: #ccc 1px dotted;
+  border: deeppink 1px dotted;
   border-radius: 20px;
   margin: 0.7rem 0;
+  background-color: cornsilk;
 
   &-header {
     align-items: center;
@@ -125,6 +125,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   color: #888;
   margin-bottom: .8rem;
 
+
   &.invalid {
     color: var(--primary-color);
     input {
@@ -136,6 +137,24 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: var(--primary-color);
   }
 }
+
+
+.searchField input[type='text']{
+  display: block;
+  width: 90%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px dotted deeppink ;
+  border-radius: 15px;
+}
+input[type='text']{
+  display: block;
+  width: 97.5%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+
 
 .btn {
   display: inline-block;
@@ -180,6 +199,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .btn:hover {
   opacity: 0.8;
 }
+
+
+
+
 
 
 
