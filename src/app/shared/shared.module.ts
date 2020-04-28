@@ -11,17 +11,19 @@ import {FormsModule} from "@angular/forms";
 
 
 
+
 @NgModule({
-  imports: [
-    HttpClientModule,
-    QuillModule.forRoot(),
-    CommonModule,
-    RouterModule,
-    FormsModule
+    imports: [
+        HttpClientModule,
+        QuillModule.forRoot(),
+        CommonModule,
+        RouterModule,
+        FormsModule,
 
 
 
-  ],
+
+    ],
   exports: [
     HttpClientModule,
     QuillModule,
