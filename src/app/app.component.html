@@ -1,15 +1,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<header>
-<img class="banner" src="{{img}}" alt="90-s poster">
-<nav class="navbar">
-  <h1>
-    <a routerLinkActive="active" [routerLink]="['create']">Додай свій спогад</a>
-  </h1>
 
+<header>
+<nav class="navbar">
+  <h3 class="header">Спогади ніколи не помирають</h3>
   <ul>
+
     <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
       <a [routerLink]="['/']">Головна</a>
     </li>
+    <li routerLinkActive="active"><a [routerLink]="['/create']">Додай свій спогад</a></li>
     <li routerLinkActive="active"><a [routerLink]="['/about']">Про сайт</a></li>
   </ul>
 

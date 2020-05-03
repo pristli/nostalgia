@@ -11,13 +11,11 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AlertService} from './shared/alert.service';
 import {SharedModule} from './shared/shared.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { AboutPageComponent } from './about-page/about-page.component';
+
 import {SearchPipe} from "./search.pipe";
 import { PostPageComponent } from './post-page/post-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-
-
+import {MemoryPageComponent} from "./memory-page/memory-page.component";
 
 
 @NgModule({
@@ -25,7 +23,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
         AppComponent,
         HomePageComponent,
         CreatePageComponent,
-        AboutPageComponent,
+        MemoryPageComponent,
         SearchPipe,
         PostPageComponent
     ],
