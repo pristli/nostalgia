@@ -1,7 +1,4 @@
-import {Component, OnInit} from '@angular/core';
-import {PostsService} from '../shared/posts.service';
-import {Observable} from 'rxjs';
-import {Post} from '../shared/interfaces';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
@@ -10,15 +7,14 @@ import {Post} from '../shared/interfaces';
 })
 export class HomePageComponent implements OnInit {
 
-  posts$: Observable<Post[]>
-  searchStr = ''
 
 
-  constructor(private postsService: PostsService) {
+  constructor() {
+
   }
 
   ngOnInit() {
-    this.posts$ = this.postsService.getAll()
   }
+
 
 }
